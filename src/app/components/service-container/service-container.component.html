@@ -1,0 +1,16 @@
+<div class="main_container">
+    <div class="main_title">
+        Our services
+    </div>
+    <div class="line">
+    </div>
+    <div class="main_desc">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo consequuntur deleniti sunt fuga est, laudantium voluptatem recusandae? Nam, quas consequatur? Nesciunt laboriosam, quis saepe numquam eveniet neque nisi possimus eum deleniti unde, delectus harum.
+    </div>
+    <div class="main_cards">
+      <div  *ngFor="let card of cardData">
+        <app-card-container [cardItem]="card"></app-card-container>
+    </div>
+    </div>
+   
+</div>

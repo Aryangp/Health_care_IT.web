@@ -1,0 +1,48 @@
+.main_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+    height: 100vh;
+    width: 100vw;
+    background-color: #f5f5f5;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    .main_title{
+        color: #000;
+        font-size: 36px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 56px;
+    }
+    .line{
+        width: 56px;
+        height: 2px;
+        flex-shrink: 0;
+        border-radius: 5px;
+        background: #000;
+    }
+    .main_desc{
+        display: flex;
+        width: 952px;
+        flex-direction: column;
+        flex-shrink: 0;
+        color: #7D7987;
+        text-align: center;
+        font-size: 18px;
+        font-family: Mulish;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 30px;
+    }
+    .main_cards{
+        display: flex;
+        flex-direction:rows;
+        gap: 40px;
+        justify-content: center;
+        align-items: center;
+    }
+}
