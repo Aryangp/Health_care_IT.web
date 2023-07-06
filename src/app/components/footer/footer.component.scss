@@ -1,0 +1,44 @@
+.main_container{
+    width: 87vw;
+    height: 62vh;
+    padding-top:124px;
+    padding-left:190px;
+    background: linear-gradient(212deg, #67C3F3 0%, #5A98F2 100%);
+   .main_section{
+    display: flex;
+    flex-direction:column;
+    gap:33px;
+    .heading{
+       color: #FFF;
+       font-size: 24px;
+       font-family: Poppins;
+       font-style: normal;
+       font-weight: 700;
+       line-height: normal;
+    }
+    .desc{
+        display: flex;
+        width: 391px;
+        flex-direction: column;
+        flex-shrink: 0;
+        color: #FFF;
+        font-size: 18px;
+        font-family: Mulish;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 28px;
+    }
+    .copyWrite{
+        display: flex;
+        width: 391px;
+        flex-direction: column;
+        flex-shrink: 0;
+        color: #FFF;
+        font-size: 16px;
+        font-family: Mulish;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 28px;
+    }
+   }
+}
