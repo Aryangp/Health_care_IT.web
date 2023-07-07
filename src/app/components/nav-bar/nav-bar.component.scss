@@ -60,6 +60,10 @@
         font-weight: 700;
         line-height: normal;
         list-style: none;
+        a{
+          text-decoration: none;
+          color: var(--1-f-1534-hyfen, #1f1534);
+        }
       }
     }
   }

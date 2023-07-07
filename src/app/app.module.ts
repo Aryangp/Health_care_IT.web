@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -9,6 +10,9 @@ import { HeroContainerComponent } from './components/hero-container/hero-contain
 import { ServiceContainerComponent } from './components/service-container/service-container.component';
 import { CardContainerComponent } from './components/card-container/card-container.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { RegisterComponent } from './components/register/register.component';
+import { ReadKeyExpr } from '@angular/compiler';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -18,11 +22,14 @@ import { FooterComponent } from './components/footer/footer.component';
     HeroContainerComponent,
     ServiceContainerComponent,
     CardContainerComponent,
-    FooterComponent
-  ],
+    FooterComponent,
+    RegisterComponent,
+    LoginComponent
+    ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

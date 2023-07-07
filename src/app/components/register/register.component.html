@@ -1,0 +1,37 @@
+<div class="main_container">
+  <div class="left_side">
+    <div class="imgContainer"></div>
+  </div>
+  <div class="right_account_info">
+    <div class="back_button">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.8625 3.225L13.3792 1.75L5.13751 10L13.3875 18.25L14.8625 16.775L8.08751 10L14.8625 3.225Z" fill="#8692A6"/>
+          </svg>
+          <div><a routerLink="/">Back</a></div>
+    </div>
+    <div class="account_info">
+      <h1>Register</h1>
+      <p>Already have an account? <a routerLink="/login">Login</a></p>
+    <div class="form_container">
+      <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+        <div class="form_input">
+          <label for="first-name">Name </label>
+          <input id="first-name" type="text" formControlName="name" />
+        </div>
+        <div class="form_input">
+          <label for="first-name">Email </label>
+          <input id="first-name" type="email" formControlName="email" />
+        </div>
+        <div class="form_input">
+          <label for="first-name">Password </label>
+          <input id="first-name" type="password" formControlName="password" />
+        </div>
+        <div class="form_input">
+          <label for="last-name">Role </label>
+          <input id="last-name" type="text" formControlName="role" />
+        </div>
+              <button type="submit" [disabled]="!registerForm.valid">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
